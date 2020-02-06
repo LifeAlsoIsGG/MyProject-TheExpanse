@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>英雄们，去超越</title>
+	<link rel="shortcut icon" href="images/bitbug_favicon.ico" />
+	
+
+  
+    
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		@font-face {
+  font-family: 'norwester';   /*字体名称*/
+  src: url('字体/norwester.ttf');  
+       /*字体源文件*/
+    }
+    @font-face {
+  font-family: '本墨锵黑';   /*字体名称*/
+  src: url('字体/本墨锵黑.ttf');  
+       /*字体源文件*/
+    }
+    @font-face {
+  font-family: '液晶体';   /*字体名称*/
+  src: url('字体/LiquidCrystal-Bold.otf');  
+       /*字体源文件*/
+    }
+    @font-face {
+  font-family: '英文写信字体';   /*字体名称*/
+  src: url('字体/ldpretty.ttf');  
+       /*字体源文件*/
+    }
+    @media all and (min-width: 701px){
+		a{
+        	color: white;
+        	text-decoration: none;
+        }
+        nav {
+			width:100%;
+			height: 40px;
+			z-index: 50;
+			font-family:本墨锵黑;
+			font-size: 20px;
+			font-color: white;
+			text-align: center;
+			position: fixed;
+			top:0;
+			left: 0;
+			
+			padding-top: 5px;
+			background-image: url('images/背景.jpg');
+			
+			}
+			nav:hover{
+				height: 200px;
+			}
+
+		li {
+			text-align: center;
+			display: inline-block;
+			line-height: 40px;
+			width: 200px;
+			height: 35px;
+			
+
+		}
+		#menu>li {
+			display: inline-block;
+			position: relative;
+			min-width: 150px;
+		}
+
+		li:hover {
+			
+			border-radius: 15px;
+			box-shadow: 0px 0px 40px rgb(153, 204, 255);
+		}
+		#sub {
+			display: none;
+			position: absolute;
+			font-size: 15px;
+		}
+		nav:hover #sub {
+			display: block;
+		}
+
+		#tb{/*图标*/
+			
+			line-height: 50px;
+			text-align: center;
+			position: fixed;
+			left: 20px;
+			top: 0px;
+			height: 40px;
+			z-index: 80;
+			font-family: 本墨锵黑;
+			font-size: 30px;
+			box-shadow: 0px 0px 50px rgb(153, 204, 255);
+
+
+
+		}
+		#tb1{
+			
+			line-height: 50px;
+			text-align: center;
+			position: fixed;
+			left: 125px;
+			top: -10px;
+			
+			height: 40px;
+			z-index: 90;
+			font-family: 本墨锵黑;
+			font-size: 30px;
+		}
+        #wz{
+	background-color: rgb(102, 255, 204);
+	border-radius: 40px;
+	position: fixed;
+	text-align: center;
+	line-height: 50px;
+	width: 280px;
+	height: 40px;
+	top: 50px;
+	left: 0px;
+	z-index: 60;
+	font-family: 本墨锵黑;
+	font-size: 20px;
+}
+
+#wz a:hover{
+	color: gray;
+}
+
+#dl{
+	background-color: rgb(102, 255, 204);
+	border-radius: 40px;
+	position: fixed;
+	text-align: center;
+	line-height: 50px;
+	width: 150px;
+	height: 40px;
+	top: 0px;
+	right: 0px;
+	z-index: 60;
+	font-family: 本墨锵黑;
+	font-size: 20px;
+}
+#dl:hover{
+	box-shadow: 0px 0px 50px rgb(153, 204, 255);
+}
+
+#dl a:hover{
+	color: gray;
+}
+
+
+
+
+
+
+	#img{
+
+        	position: fixed;
+        	left: 0px;
+        	 z-index: -2;
+        	 top: 0px;
+        	 
+        	 
+        }
+
+
+
+		#img1{
+			width: 100%;
+			position: fixed;
+			left: 0px;
+        	 z-index: -2;
+        	 top: 0px;
+        	 transition: all 1s linear;
+        	 opacity: 0;
+
+        	 
+		}
+
+		#img1:hover{
+			opacity: 1;
+
+
+
+		}
+
+#video{
+position: absolute;
+top: 130px;
+left: 320px;
+
+}
+#yx{
+	background-image: url('images/背景.jpg');
+	border-radius: 40px;
+	position: absolute;
+	text-align: center;
+	padding-top: 20px;
+	top: 60px;
+	width: 350px;
+	height: 60px;
+	left: 580px;
+	font-family: 本墨锵黑;
+	font-size: 40px;
+	transition: all 0.5s;
+}
+#yx:hover{
+	transform: scale(1.1);
+}
+#yc{/*隐藏PC端*/
+
+}
+
+#yc1{/*隐藏手机端*/
+
+display: none;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*………………………………………………………………………………………………………………响应式………………………………………………………………………………………………………………*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 700px) {
+			* {
+				padding: 0;
+				margin: 0;
+				
+			}
+			a{
+			color: white;
+			text-decoration: none;
+			}
+			nav {
+				z-index: 20;
+				position: fixed;
+				width: 100px;
+				min-height: 40px;
+				line-height: 40px;
+				text-align: center;
+				background-image: url('images/背景.jpg');
+				font-family:本墨锵黑;
+				font-size: 15px;
+			}
+
+			li {
+				list-style-type: none;
+				min-width: 100px;
+
+			}
+
+			#menu>li {
+				display: none;
+				position: relative;
+			}
+
+			nav:hover #menu>li {
+				display: block;
+
+			}
+
+			li:hover {
+			
+				border-radius: 5px;
+				box-shadow: 0px 0px 40px rgb(153, 204, 255);
+			}
+
+			#sub {
+				display: none;
+				background-image: url('images/背景.jpg');
+			}
+
+			#mm:hover #sub {
+				margin-left:100%;
+				top:0px;
+				display: block;
+				position: absolute;
+			}
+
+			.line {
+	            width: 70px;
+	            height: 40px;
+	            
+	            padding: 20px 0 0px 30px;
+	            position: relative;
+	            opacity: 0.7;
+	            cursor: pointer;
+	        }
+
+	        .line div {
+	            display: block;
+	            width: 50px;
+	            height: 5px;
+	            background: #fff;
+	            position: absolute;
+	            border-radius: 10px 0 0 10px;
+	        }
+
+	        .line .one {
+	            width: 40px;
+	            top:15px;
+
+	        }
+
+	        .line:hover .one {
+	        	transform: rotate(-30deg);
+	        }
+
+	        .line .two {
+	            width: 40px;
+	            top:30px;
+	        }
+
+	        .line .three {
+	            width: 40px;
+	            top:45px;
+	        }
+
+	         .line:hover .three {
+	        	transform: rotate(30deg);
+	        }
+		
+		#su/*搜索*/
+		{	
+			z-index: 9;
+			position: fixed;
+			top: 0;
+			width: 100%;
+			height: 60px;
+			background: black;
+			opacity: 0.8;
+		}
+		#su1{/*按钮搜索*/
+			z-index: 10;
+			position: relative;
+			width: 40px;
+			
+			border-radius: 40px;
+			left:225px;
+			top: -26px;
+			font-family:本墨锵黑;
+		}
+		
+		#su1:hover{
+			box-shadow: 0px 0px 40px rgb(153, 204, 255);
+		}
+		
+	
+	#su3{/*搜索框*/
+		background-color: black;
+		position: relative;
+		top: 8px;
+		left: 0px;
+		width: 220px;
+
+
+
+		}
+		#su4/*图标和输入框*/{
+			
+			
+			z-index: 20;
+			position: relative;
+			top: 10px;
+			margin: 0 auto;
+			width: 260px;
+			height: 45px;
+		}
+
+		#wz/*当前位置*/{
+			background-color: rgb(102, 255, 204);
+			position: absolute;
+			left: 0px;
+			top: 65px;
+			width: 250px;
+			height: 40px;
+			border-radius: 40px;
+			line-height: 45px;
+			font-family:本墨锵黑;
+			font-size: 18px;
+			color: white;
+			text-align: center;
+		}
+		#wz a:hover{
+			color: gray;
+		
+		}
+				#dl{
+			z-index: 20;
+			position: relative;
+			background-color: rgb(102, 255, 204);
+			max-width: 50px;
+			width: 100%;
+			height: 30px;
+			border-radius: 15px;
+			font-family:本墨锵黑;
+			font-size: 15px;
+			text-align: center;
+			line-height: 35px;
+			top: -25px;
+			right:8%;
+			left: 92%
+		
+		}
+		#dl:hover{
+			box-shadow: 0px 0px 40px rgb(153, 204, 255);
+		}
+		#dl a:hover{
+			color: gray;
+		}
+
+		#sp/*视频*/{
+			
+			z-index: -1;
+			position: absolute;
+			margin: 0 auto;
+			top: 65px;
+			width: 100%;
+			height: 400px;
+			
+
+		}
+
+		#yc1{/*隐藏手机端*/
+
+		}
+		#yc{/*隐藏PC端*/
+			display: none;
+		}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+	<div id="yc"><!--隐藏PC端css-->
+	<div id="img">
+		<img src="images/英雄背景.jpg" width="100%" height="100%">
+	</div>
+	<div id="img1">
+		<img src="images/星际穿越.jpg" width="100%" height="100%">
+	</div>
+	<nav><!--pc端导航栏-->
+		
+		<ul id="menu">
+			<li><a href="无垠星际主页（响应式）.html">首页</a></li>
+			<li><a href="">度假星</a>
+             <ul id="sub">
+				<li><a href="">火星</a></li>
+				<li><a href="">水星</a></li>
+				<li><a href="">土星</a></li>
+				<li><a href="">木卫二</a></li>
+			  </ul>
+			</li>			
+			<li><a href="">飞船租赁</a>
+              <ul id="sub">
+				<li><a href="">度假系列</a></li>
+				<li><a href="">运输系列</a></li>
+				<li><a href="">二手市场</a></li>
+			  </ul>
+			</li>
+			<li><a href="">超时空旅行</a>
+				<ul id="sub">
+				<li><a href="">家园Ⅰ期</a></li>
+				<li><a href="">家园Ⅱ期</a></li>
+
+			  </ul>
+			</li>
+			<li><a href="星际通行证预约（响应式）.html">星际通行证预约</a></li>
+
+		</ul>
+	</nav>
+	<div id="tb1"><a href=""><img src="images/飞船5.png"></a></div>
+	<div id="tb"><a href="无垠星际主页（响应式）.html">无垠星际</a></div>
+	<div id="wz"><a href="无垠星际主页（响应式）.html">首页</a><font color="white">丨当前位置：</font><a href="英雄，去超越（响应式）.html">22世纪英雄</a></div>
+	<div id="dl"><a href="登录和注册（响应式）.html">登录</a><font color="white">丨</font><a href="登录和注册（响应式）.html">注册</a></div>
+	<a href=""><div id="yx"><font color="white">英雄们，去超越</font></div></a>	
+	<div id="video"><video src="Video/回顾：22世纪ogg.Ogg" controls="controls" width="900px" height="445px"></video></div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+	
+<!--………………………………………………………………………………………………………………响应式…………………………………………………………………………………………………………-->
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="yc1"><!--隐藏手机端css-->
+	<nav>
+		<div class="line">
+				<div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+		</div>
+		<ul id="menu">
+			<li><a href="无垠星际主页（响应式）.html">首页</a></li>
+			<li><a href="">度假星</a>
+             <ul id="sub">
+				<li><a href="">火星</a></li>
+				<li><a href="">水星</a></li>
+				<li><a href="">土星</a></li>
+				<li><a href="">木卫二</a></li>
+			  </ul>
+			</li>
+					
+			<li id="mm"><a href="">飞船租赁</a>
+              <ul id="sub">
+				<li><a href="">度假系列</a></li>
+				<li><a href="">运输系列</a></li>
+				<li><a href="">二手市场</a></li>
+			  </ul>
+			</li>
+		
+			<li id="mm"><a href="">超时空旅行</a>
+				<ul id="sub">
+				<li><a href="">家园Ⅰ期</a></li>
+				<li><a href="">家园Ⅱ期</a></li>
+			  </ul>
+			</li>
+		
+			<li><a href="星际通行证预约（响应式）.html">星际通行证</a></li>
+
+		</ul>
+	</nav>
+	<div id="su">
+		<div id="su4">
+		<div id="su3">
+		<input type="text" id="username" name="" style="width: 220px ;height: 30px;">
+		</div>
+		
+		<div id="su1">
+		<input type="button" value="搜索"  style="width: 40px ;height: 34px;font-family:本墨锵黑;font-size: 16px;">
+		</div>
+	</div>
+	<div id="dl"><a href="登录和注册（响应式）.html">登录</a></div>
+</div>
+
+
+	<div id="wz">
+	<a href="无垠星际主页（响应式）.html">首页</a>|当前位置：
+	<a href="英雄，去超越（响应式）.html">22世纪英雄</a>
+</div>
+
+
+
+	<div id="sp"><video src="Video/回顾：22世纪ogg.Ogg" controls="controls"  width="100%" height="100%"></video></div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

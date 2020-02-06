@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>无垠星际：全星际最大的旅游网站</title>
+	<link rel="shortcut icon" href="images/bitbug_favicon.ico"/>
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		 @font-face {
+  		font-family: '本墨锵黑';   /*字体名称*/
+  		src: url('字体/本墨锵黑.ttf');  
+       /*字体源文件*/
+    }
+    #dx{
+    	position: relative;
+    	margin: 0 auto;
+    	max-width: 700px;
+    }
+   
+
+
+			* {
+				padding: 0;
+				margin: 0;
+				
+			}
+			a{
+			color: white;
+			text-decoration: none;
+			}
+			nav {
+				z-index: 20;
+				position: fixed;
+				width: 100px;
+				min-height: 40px;
+				line-height: 40px;
+				text-align: center;
+				background-image: url('images/背景.jpg');
+				font-family:本墨锵黑;
+				font-size: 15px;
+
+			}
+
+			li {
+				list-style-type: none;
+				min-width: 100px;
+
+			}
+
+			#menu>li {
+				display: none;
+				position: relative;
+			}
+
+			nav:hover #menu>li {
+				display: block;
+
+
+			}
+
+			li:hover {
+				
+				border-radius: 5px;
+				box-shadow: 0px 0px 40px rgb(153, 204, 255);
+			}
+
+			#sub {
+				display: none;
+				background-image: url('images/背景.jpg');
+			}
+
+			#mm:hover #sub {
+				margin-left:100%;
+				top:0px;
+				display: block;
+				position: absolute;
+			}
+
+			.line {
+	            width: 70px;
+	            height: 40px;
+	            
+	            padding: 20px 0 0px 30px;
+	            position: relative;
+	            opacity: 0.7;
+	            cursor: pointer;
+	        }
+
+	        .line div {
+	            display: block;
+	            width: 50px;
+	            height: 5px;
+	            background: #fff;
+	            position: absolute;
+	            border-radius: 10px 0 0 10px;
+	        }
+
+	        .line .one {
+	            width: 40px;
+	            top:15px;
+
+	        }
+
+	        .line:hover .one {
+	        	transform: rotate(-30deg);
+	        }
+
+	        .line .two {
+	            width: 40px;
+	            top:30px;
+	        }
+
+	        .line .three {
+	            width: 40px;
+	            top:45px;
+	        }
+
+	         .line:hover .three {
+	        	transform: rotate(30deg);
+	        }
+		
+		#su/*搜索*/
+		{	
+			z-index: 9;
+			position: fixed;
+			top: 0;
+
+			width: 100%;
+			max-width: 700px;
+			height: 60px;
+			background: black;
+
+			
+
+		}
+		#su1{/*按钮搜索*/
+			z-index: 10;
+			position: relative;
+			width: 40px;
+
+			border-radius: 40px;
+			left:225px;
+			top: -26px;
+			font-family:本墨锵黑;
+
+		}
+		#su1:hover{
+			box-shadow: 0px 0px 40px rgb(153, 204, 255);
+		}
+
+	
+	#su3{/*搜索框*/
+		background-color: black;
+		position: relative;
+		top: 8px;
+		left: 0px;
+		width: 220px;
+
+
+
+		}
+		#su4/*图标和输入框*/{
+			
+			width: 260px;
+			z-index: 20;
+			position: relative;
+			top: 10px;
+			
+			margin: 0 auto;
+			height: 50px;
+
+			
+
+			
+
+		}
+		#dl{
+			z-index: 20;
+			position: relative;
+			
+			background-color: rgb(102, 255, 204);
+			max-width: 50px;
+			width: 100%;
+			height: 30px;
+			border-radius: 15px;
+			font-family:本墨锵黑;
+			font-size: 15px;
+			text-align: center;
+			line-height: 35px;
+			top: -30px;
+			right:8%;
+			left: 92%
+		
+		}
+		#dl:hover{
+			box-shadow: 0px 0px 40px rgb(153, 204, 255);
+		}
+		#dl a:hover{
+			color: gray;
+			
+		}
+		#tp1/*23世纪图片*/{
+			
+			position: absolute;
+			overflow: hidden;
+			top: 60px;
+			width: 100%;
+			height: 400px;
+		}
+		#tp1 img:hover{
+			cursor: pointer;
+			transform: scale(1.3);
+			transition: all 3s linear;
+
+		}
+		#tp11/*文字*/{
+			text-align: center;
+			z-index: 1;
+			position: relative;
+			top: 70px;
+			margin: 0 auto;
+			width: 250px;
+			min-width: 250px;
+			font-family:本墨锵黑;
+			font-size: 25px;
+
+
+		}
+		#tp12/*查看专题*/{
+			position: relative;
+			background-color: gray;
+			top: 80px;
+			margin: 0 auto;
+			height: 35px;
+			width: 100px;
+			transition: 1s;
+			text-align: center;
+			line-height: 38px;
+			border-radius: 40px;
+			font-family:本墨锵黑;
+		}
+		#tp12:hover{
+			background-color: rgb(102, 255, 204);
+			box-shadow: 0px 0px 40px rgb(153, 204, 255);
+
+		}
+		
+
+	#tp2/*第二张图片*/{
+		background-color: red;
+			position: absolute;
+			overflow: hidden;
+			top: 470px;
+			width: 100%;
+			height: 400px;
+			
+	}
+	#tp2 img:hover{
+			cursor: pointer;
+			transform: scale(1.3);
+			transition: all 3s linear;	
+		}
+		#tp21/*文字*/{
+			
+			z-index: 1;
+			text-align: center;
+			position: relative;
+			top: 400px;
+			margin: 0 auto;
+			width: 380px;
+			min-width: 380px;
+			font-family:本墨锵黑;
+			font-size: 25px;
+		}
+		#tp22{/*查看专题*/
+			position: relative;
+			background-color: gray;
+			top: 410px;
+			margin: 0 auto;
+			height: 35px;
+			width: 100px;
+			transition: 1s;
+			text-align: center;
+			line-height: 38px;
+			border-radius: 40px;
+			font-family:本墨锵黑;
+		}
+		#tp22:hover{
+			background-color: rgb(102, 255, 204);
+			box-shadow: 0px 0px 40px rgb(153, 204, 255);
+
+		}
+		#tp3/*22世纪英雄图片*/{
+			
+			position: absolute;
+			overflow: hidden;
+			top: 880px;
+			width: 100%;
+			height: 400px;
+			transition: 1s;
+					}
+
+		
+
+		#tp31/*文字*/{
+			
+			z-index: 1;
+			text-align: center;
+			position: relative;
+			top: 750px;
+			margin: 0 auto;
+			width: 380px;
+			min-width: 380px;
+			font-family:本墨锵黑;
+			font-size: 25px;
+
+		}
+		#tp32/*播放按钮*/{
+			z-index: 1;
+			
+			position: relative;
+			top: 770px;
+			margin: 0 auto;
+			width: 100px;
+			height: 100px;
+			min-width: 80px;
+
+		}
+		#tp32 img:hover{
+			cursor: pointer;
+			transform: scale(1.2);
+			transition: all 1s;	
+
+		}
+
+
+	</style>
+	
+</head>
+<body id="dx">
+	
+	<nav>
+		<div class="line">
+				<div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+		</div>
+		<ul id="menu">
+			<li><a href="无垠星际主页移动端.html">首页</a></li>
+			<li id="mm"><a href="">度假星</a>
+             <ul id="sub">
+				<li><a href="">火星</a></li>
+				<li><a href="">水星</a></li>
+				<li><a href="">土星</a></li>
+				<li><a href="">木卫二</a></li>
+			  </ul>
+			</li>			
+			<li id="mm"><a href="">飞船租赁</a>
+              <ul id="sub">
+				<li><a href="">度假系列</a></li>
+				<li><a href="">运输系列</a></li>
+				<li><a href="">二手市场</a></li>
+			  </ul>
+			</li>
+			<li  id="mm"><a href="">超时空旅行</a>
+				<ul id="sub">
+				<li><a href="">家园Ⅰ期</a></li>
+				<li><a href="">家园Ⅱ期</a></li>
+				
+			  </ul>
+			</li>
+			<li><a href="星际通行证预约移动端.html">星际通行证</a></li>
+
+		</ul>
+	</nav>
+	<div id="su">
+		
+		<div id="su4">
+		<div id="su3">
+		<input type="text" id="username" name="" style="width: 220px ;height: 30px;">
+		</div>
+		<div id="su1">
+		<input type="button" value="搜索"  style="width: 40px ;height: 34px;font-family:本墨锵黑;font-size: 16px;">
+
+		</div>
+		
+		</div>
+		<div id="dl"><a href="登录和注册移动端.html">登录</a></div>
+
+
+	</div>
+
+
+	
+
+<div id="tp1"><img src="images/星际穿越.jpg" style="width: 100%;height: 100%"></div>
+<div id="tp11"><font color="white">#23世纪#<br><font size="4px">未来的星际不再"浩瀚"</font></font></div>
+<a href=""><div id="tp12"><font color="white">查看专题</font></div></a>
+
+
+
+<div id="tp2"><img src="images/飞船.jpg" style="width: 100%;height: 100%"></div>
+<div id="tp21"><font color="white">#希斯特利亚#<br><font size="4px">全新度假飞船，不止于九星服务</font> </font></div>
+<a href=""><div id="tp22"><font color="white">先睹为快</font></div></a>
+
+
+
+<div id="tp3"><a href=""><img src="images/英雄背景.jpg" style="width: 100%;height: 100%"></a></div>
+<div id="tp31"><font color="white">#英雄，永无止境#<br><font size="4px">纪念：22世纪最伟大的星际英雄</font></font></div>
+<a href="英雄，去超越移动端.html">
+<div id="tp32">
+<img src="images/播放按钮.png"style="width: 100px;height: 100px">
+</div>
+</a>
+
+
+
+
+</body>
+</html>

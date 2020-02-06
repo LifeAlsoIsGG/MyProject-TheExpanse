@@ -1,0 +1,628 @@
+		*{
+			padding: 0;margin: 0;
+		text-decoration: none;
+		}
+		@font-face {
+  		font-family: '本墨锵黑';   /*字体名称*/
+  		src: url('字体/本墨锵黑.ttf');  
+       /*字体源文件*/
+    }
+	@media screen and (min-width: 700px){
+		#tb{/*图标*/
+			
+			line-height: 50px;
+			text-align: center;
+			position: fixed;
+			left: 20px;
+			top: 0px;
+			height: 40px;
+			z-index: 80;
+			font-family: 本墨锵黑;
+			font-size: 30px;
+			box-shadow: 0px 0px 50px rgb(153, 204, 255);
+		}
+		
+		#tb1{
+			
+			line-height: 50px;
+			text-align: center;
+			position: fixed;
+			left: 125px;
+			top: -10px;
+			
+			height: 40px;
+			z-index: 90;
+			font-family: 本墨锵黑;
+			font-size: 30px;
+
+		}
+
+
+		nav {
+			width:100%;
+			height: 40px;
+			z-index: 50;
+			font-family:本墨锵黑;
+			font-size: 20px;
+			font-color: white;
+			text-align: center;
+			position: fixed;
+			top:0;
+			padding-top: 5px;
+			background-image: url('images/背景.jpg');
+			
+			}
+			nav:hover{
+				height: 200px;
+			}
+
+		li {
+			text-align: center;
+			display: inline-block;
+			line-height: 40px;
+			width: 150px;
+			height: 35px;
+			
+
+		}
+		#menu>li {
+			display: inline-block;
+			position: relative;
+			min-width: 150px;
+		}
+
+		li:hover {
+			
+			border-radius: 15px;
+			box-shadow: 0px 0px 40px rgb(153, 204, 255);
+		}
+		#sub {
+			display: none;
+			position: absolute;
+			font-size: 15px;
+		}
+		nav:hover #sub {
+			display: block;
+		}
+		a{
+        	color: white;
+        }
+
+
+        #dl{
+	background-color: rgb(102, 255, 204);
+	border-radius: 40px;
+	position: fixed;
+	text-align: center;
+	line-height: 50px;
+	width: 150px;
+	height: 40px;
+	top: 0px;
+	right: 0px;
+	z-index: 60;
+	font-family: 本墨锵黑;
+	font-size: 20px;
+}
+#dl:hover{
+	box-shadow: 0px 0px 50px rgb(153, 204, 255);
+}
+#dl a:hover{
+	color: gray;
+}
+#kj/*科技*/{
+	position: absolute;
+	top: 650px;
+	left: 0;
+	margin-bottom: 50px;
+	background-image: url('images/背景.jpg');
+	width: 100%;
+	height: 300px;
+}
+#kj1/*文字*/{
+	position: relative;
+	left: 40px;
+	top: 80px;
+	height: 100px;
+	width: 200px;
+	font-family: 本墨锵黑;
+	font-size: 100px;
+	color: white;
+}
+#kj1:hover{
+	box-shadow: 0px 0px 40px rgb(153, 204, 255);
+}
+#kj2/*图片*/{
+	z-index: 1;
+	position: relative;
+	top: -70px;
+	left: 700px;
+	width: 500px;
+	height: 250px;
+	background-color: red;
+	box-shadow: 0px 0px 40px rgb(153, 204, 255); 
+	cursor: pointer;
+}
+
+#kj3/*隐藏说明*/{
+	z-index: 2;
+	position: relative;
+	top: -320px;
+	left: 700px;
+	width: 500px;
+	height: 250px;
+	background-color: rgba(19, 35, 47, 0.9);
+	
+	font-family: 本墨锵黑;
+	font-size: 30px;
+	color: white;
+	opacity: 0;
+	cursor: pointer;
+	
+}
+#kj3:hover{
+		opacity: 0.8;
+}
+
+
+
+#yc/*隐藏PC端*/{
+
+}
+#yc1/*隐藏移动端*/{
+display: none;
+}
+
+}/*pc端*/
+
+
+
+
+
+
+
+
+
+
+
+/*………………………………………………………………………………………………………………响应式………………………………………………………………………………………………………………*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px){
+	* {
+				padding: 0;
+				margin: 0;
+				
+			}
+	a{
+			color: white;
+			text-decoration: none;
+			}
+
+	nav {
+				z-index: 20;
+				position: fixed;
+				width: 100px;
+				min-height: 40px;
+				line-height: 40px;
+				text-align: center;
+				background-image: url('images/背景.jpg');
+				font-family:本墨锵黑;
+				font-size: 15px;
+			}
+
+			li {
+				list-style-type: none;
+				min-width: 100px;
+
+			}
+
+			#menu>li {
+				display: none;
+				position: relative;
+			}
+
+			nav:hover #menu>li {
+				display: block;
+
+			}
+
+			li:hover {
+				
+				border-radius: 5px;
+				box-shadow: 0px 0px 40px rgb(153, 204, 255);
+			}
+
+			#sub {
+				display: none;
+				background-image: url('images/背景.jpg');
+			}
+
+			#mm:hover #sub {
+				margin-left:100%;
+				top:0px;
+				display: block;
+				position: absolute;
+			}
+
+			.line {
+	            width: 70px;
+	            height: 40px;
+	            background: gray;
+	            padding: 20px 0 0px 30px;
+	            position: relative;
+	            opacity: 0.7;
+	            cursor: pointer;
+	        }
+
+	        .line div {
+	            display: block;
+	            width: 50px;
+	            height: 5px;
+	            background: #fff;
+	            position: absolute;
+	            border-radius: 10px 0 0 10px;
+	        }
+
+	        .line .one {
+	            width: 40px;
+	            top:15px;
+
+	        }
+
+	        .line:hover .one {
+	        	transform: rotate(-30deg);
+	        }
+
+	        .line .two {
+	            width: 40px;
+	            top:30px;
+	        }
+
+	        .line .three {
+	            width: 40px;
+	            top:45px;
+	        }
+
+	         .line:hover .three {
+	        	transform: rotate(30deg);
+	        }
+		
+		#su/*搜索*/
+		{	
+			z-index: 9;
+			position: fixed;
+			top: 0;
+
+			width: 100%;
+			max-width: 700px;
+			height: 60px;
+			background: black;
+
+			
+
+		}
+		#su1{/*按钮搜索*/
+			z-index: 10;
+			position: relative;
+			width: 40px;
+
+			border-radius: 40px;
+			left:225px;
+			top: -26px;
+			font-family:本墨锵黑;
+		}
+		#su1:hover{
+			box-shadow: 0px 0px 40px rgb(153, 204, 255);
+		}
+
+	
+	#su3{/*搜索框*/
+		background-color: black;
+		position: relative;
+		top: 8px;
+		left: 0px;
+		width: 220px;
+
+
+
+		}
+		#su4/*图标和输入框*/{
+			
+			width: 260px;
+			z-index: 20;
+			position: relative;
+			top: 10px;
+			
+			margin: 0 auto;
+			height: 50px;
+		}
+		#dl{
+			z-index: 20;
+			position: relative;
+			background-color: rgb(102, 255, 204);
+			max-width: 50px;
+			width: 100%;
+			height: 30px;
+			border-radius: 15px;
+			font-family:本墨锵黑;
+			font-size: 15px;
+			text-align: center;
+			line-height: 35px;
+			top: -30px;
+			right:8%;
+			left: 92%
+		
+		}
+		#dl:hover{
+			box-shadow: 0px 0px 40px rgb(153, 204, 255);
+		}
+		#dl a:hover{
+			color: gray;
+		}
+		#lb/*设置轮播位置*/{
+		position: relative;
+		margin: 0 auto;
+		top: 60px;
+		}
+		#yc1/*隐藏移动端*/{
+
+		}
+
+		#yc/*隐藏移动端*/{
+			display: none;
+		}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*切换图片的css*/
+#lb/*设置轮播位置*/{
+	position: relative;
+	margin: 0 auto;
+	top: 60px;
+}
+
+.pc-banner {
+	background: url(images/星际穿越.jpg) 
+
+	no-repeat center top/100% auto;
+
+	width: 100%;
+	float: left;
+}
+
+@media screen and (max-width: 700px) {
+	.pc-banner {
+		background-size: auto 100%;
+	}
+}
+
+.swiper-container {
+	width: 100%;
+	margin: 35px 0;
+}
+
+@media screen and (max-width: 700px) {
+	.swiper-container {
+		margin: 20px 0 15px;
+	}
+}
+
+.swiper-slide {
+	-webkit-transition: transform 1.0s;
+	-moz-transition: transform 1.0s;
+	-ms-transition: transform 1.0s;
+	-o-transition: transform 1.0s;
+	-webkit-transform: scale(0.7);
+	transform: scale(0.7);
+}
+
+@media screen and (max-width: 700px) {
+	.swiper-slide {
+		-webkit-transform: scale(0.97);
+		transform: scale(0.97);
+	}
+}
+
+.swiper-slide-active,.swiper-slide-duplicate-active {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+@media screen and (max-width: 700px) {
+	.swiper-slide-active,.swiper-slide-duplicate-active {
+		-webkit-transform: scale(0.97);
+		transform: scale(0.97);
+	}
+}
+
+.none-effect {
+	-webkit-transition: none;
+	-moz-transition: none;
+	-ms-transition: none;
+	-o-transition: none;
+}
+
+.swiper-slide a {
+	background: #fff;
+	padding:10px;
+	display: block;
+	border-radius: 14px;
+}
+
+@media screen and (min-width: 700px) {
+	.swiper-slide a:after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		box-sizing: border-box;
+		border: 10px solid #fff;
+		content: "";
+		width: 100%;
+		height: 100%;
+		background: url(images/top_slick_cover_bg01.png) 0 0 repeat;
+		border-radius: 20px;
+	}
+}
+
+.swiper-slide-active a:after {
+	background: none;
+}
+
+@media screen and (max-width: 700px) {
+	.swiper-slide a {
+		padding: 5px;
+		border-radius: 7px;
+	}
+}
+
+.swiper-slide img {
+	width: 100%;
+	border-radius: 14px;
+	display: block;
+}
+
+@media screen and (max-width: 700px) {
+	.swiper-slide img {
+		border-radius: 7px;
+	}
+}
+
+.swiper-pagination {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.swiper-pagination-bullet {
+	background: #00a0e9;
+	margin-left: 4px;
+	margin-right: 4px;
+	width: 17px;
+	height: 17px;
+	opacity: 1;
+	margin-bottom: 4px;
+}
+
+.swiper-pagination-bullet-active {
+	width: 13px;
+	height: 13px;
+	background: #FFF;
+	border: 6px solid #00a0e9;
+	margin-bottom: 0;
+}
+
+@media screen and (max-width: 700px) {
+	
+	.swiper-pagination {
+		position: relative;
+		margin-bottom: 20px;
+	}
+
+	.swiper-pagination-bullet {
+		background: #00a0e9;
+		margin-left: 2px;
+		margin-right: 2px;
+		width: 8px;
+		height: 8px;
+		margin-bottom: 2px;
+	}
+
+	.swiper-pagination-bullet-active {
+		width: 6px;
+		height: 6px;
+		background: #FFF;
+		border: 3px solid #00a0e9;
+		margin-bottom: 0;
+	}
+}
+
+.button {
+	width: 1000px;
+	margin: 0 auto;
+	bottom: 43px;
+	position: relative;
+}
+
+@media screen and (max-width: 700px) {
+	.button {
+		width: 70%;
+		bottom: 22px;
+	}
+}
+
+.button div:hover {
+	background-color: rgb(102, 255, 204);
+}
+
+.swiper-button-prev {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l4.2%2C4.2L8.4%2C22l17.8%2C17.8L22%2C44L0%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E") #00a0e9 center 50%/50% 50% no-repeat;
+}
+
+.swiper-button-next {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L5%2C44l-4.2-4.2L18.6%2C22L0.8%2C4.2L5%2C0z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E") #00a0e9 center 50%/50% 50% no-repeat;
+}
+
+@media screen and (max-width: 700px) {
+	.button div {
+		width: 28px;
+		height: 28px;
+	}
+}	
+/*切换图片的css*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

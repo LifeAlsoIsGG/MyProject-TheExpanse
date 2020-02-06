@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>23世纪</title>
+    <link rel="shortcut icon" href="images/bitbug_favicon.ico"/>
+    <link rel="stylesheet" href="css切换图片滚动型/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="23世纪移动端css.css">
+<style type="text/css">
+
+</style>
+
+</head>
+<body id="dx">
+	<nav>
+		<div class="line">
+				<div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+		</div>
+		<ul id="menu">
+			<li><a href="无垠星际主页移动端.html">首页</a></li>
+			<li id="mm"><a href="">度假星</a>
+             <ul id="sub">
+				<li><a href="">火星</a></li>
+				<li><a href="">水星</a></li>
+				<li><a href="">土星</a></li>
+				<li><a href="">木卫二</a></li>
+			  </ul>
+			</li>			
+			<li id="mm"><a href="">飞船租赁</a>
+              <ul id="sub">
+				<li><a href="">度假系列</a></li>
+				<li><a href="">运输系列</a></li>
+				<li><a href="">二手市场</a></li>
+			  </ul>
+			</li>
+			<li id="mm"><a href="">超时空旅行</a>
+				<ul id="sub">
+				<li><a href="">家园Ⅰ期</a></li>
+				<li><a href="">家园Ⅱ期</a></li>
+			  </ul>
+			</li>
+			<li><a href="星际通行证预约移动端.html">星际通行证</a></li>
+
+		</ul><!--手机端导航栏-->
+	</nav>
+	<div id="su">
+		
+		<div id="su4">
+		<div id="su3">
+		<input type="text" id="username" name="" style="width: 220px ;height: 30px;">
+		</div>
+		<div id="su1">
+		<input type="button" value="搜索"  style="width: 40px ;height: 34px;font-family:本墨锵黑;font-size: 16px;">
+		</div>
+		
+		</div>
+		<div id="dl"><a href="登录和注册移动端.html">登录</a></div>
+	</div>
+
+
+<div id="lb">
+ <section class="pc-banner">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide-center none-effect"><a href="#"><img src="images/星际穿越.jpg" height="400px"></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/星空4.jpg" height="400px"></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/飞船3.jpg" height="400px"></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/背景1.jpg" height="400px"></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/英雄背景.jpg" height="400px" ></a></div>
+        </div>
+        
+    </div>
+    <div class="swiper-pagination"></div>
+	<div class="button">
+     <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div></div>
+</section>
+    <!-- Swiper JS -->
+    <script src="js切换图片滚动型/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+	window.onload = function() {
+    var swiper = new Swiper('.swiper-container',{
+		autoplay:3000,
+		speed:1000,
+		autoplayDisableOnInteraction : false,
+		loop:true,
+		centeredSlides : true,
+		slidesPerView:2,
+        pagination : '.swiper-pagination',
+		paginationClickable:true,
+		prevButton:'.swiper-button-prev',
+        nextButton:'.swiper-button-next',
+		onInit:function(swiper){
+			swiper.slides[2].className="swiper-slide swiper-slide-active";//第一次打开不要动画
+			},
+        breakpoints: { 
+                668: {
+                    slidesPerView: 1,
+                 }
+            }
+		});
+		}
+    </script>
+     <!-- 切换图片 -->
+
+
+
+
+
+
+</body>
+</html>

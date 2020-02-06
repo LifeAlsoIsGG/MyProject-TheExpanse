@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录/注册</title>
+	<link rel="shortcut icon" href="images/bitbug_favicon.ico" />
+	
+
+      <link rel="stylesheet" href="css登录界面/移动端css.css">
+
+	<style type="text/css">
+
+
+		@font-face {
+  font-family: 'norwester';   /*字体名称*/
+  src: url('字体/norwester.ttf');  
+       /*字体源文件*/
+    }
+    @font-face {
+  font-family: '本墨锵黑';   /*字体名称*/
+  src: url('字体/本墨锵黑.ttf');  
+       /*字体源文件*/
+    }
+    @font-face {
+  font-family: '液晶体';   /*字体名称*/
+  src: url('字体/LiquidCrystal-Bold.otf');  
+       /*字体源文件*/
+    }
+    @font-face {
+  font-family: '英文写信字体';   /*字体名称*/
+  src: url('字体/ldpretty.ttf');  
+       /*字体源文件*/
+    }
+    #dx/*固定大小*/{
+      max-width: 700px;
+      position: relative;
+      margin: 0 auto;
+    }
+
+
+
+  #wz{
+    z-index: 40;
+    position: relative;
+    top: 3px;
+    margin:0 auto ;
+    background-color: rgb(102, 255, 204);
+    width: 250px;
+    height: 38px;
+    border-radius:40px ;
+    text-align: center;
+    font-family: 本墨锵黑;
+    font-size: 18px;
+    color: white;
+    line-height: 40px;
+  }
+  #wz a{
+    color: white;
+  }
+  #wz a:hover{
+  color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body id="dx">
+
+
+
+
+
+
+
+
+
+
+  <div id="wz"><a href="无垠星际主页移动端.html">首页</a>|当前位置：
+  <a href="登录和注册移动端.html">登录和注册</a></div>
+<div class="form">
+      
+      <ul class="tab-group">
+        <li class="tab active"><a href="#denlu">登录</a></li>
+        <li class="tab"><a href="#zhuce">注册</a></li>
+      </ul>
+      
+      <div class="tab-content">
+                <div id="denlu">   
+          <h1>欢迎回来!</h1>
+          
+          <form action="/" method="post">
+          
+            <div class="field-wrap">
+            <label>
+              电子邮箱<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              密码<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+          </div>
+          
+          <p class="forgot"><a href="#">忘记密码?</a></p>
+          
+          <button class="button button-block"/>登录</button>
+          
+          </form>
+
+        </div>
+        <div id="zhuce">   
+          <h1>欢迎您加入无垠星际</h1>
+          
+          <form action="/" method="post">
+          
+          <div class="top-row">
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              电子邮箱<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              密码<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+
+          </div>
+          <div class="field-wrap">
+            <label>
+              确认密码<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off"/>
+            
+          </div>
+          
+          <button type="submit" class="button button-block"/>注册</button>
+          
+          </form>
+
+        </div>
+        
+        
+        
+      </div><!-- tab-content -->
+      
+</div> <!-- /form -->
+<script src='js登录界面/index2.js'></script>
+
+  
+
+    <script  src="js登录界面/index.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+</body>
+</html>
