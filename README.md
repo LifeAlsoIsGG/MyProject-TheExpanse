@@ -8,8 +8,8 @@
 
 ![](images/web1.png)
 
-![](images/web2.png)
+![](images/web2.jpg)
 
 ## 移动端
 
-![](images/web3.png)
+![](images/web3.jpg)
